@@ -1,0 +1,235 @@
+
+.main-container{
+display:grid;
+height: 100vh;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 0.2fr 0.3fr 0.6fr 1.5fr 0.2fr ;
+grid-template-areas: "nav nav nav nav"
+                    "left-sidebar main main right-sidebar"
+                    "left-sidebar center center right-sidebar"
+                    "left-sidebar center center right-sidebar"
+                    "footer footer footer footer";
+grid-gap: 0.5rem; 
+font-family: sans-serif;
+font-weight: 800; 
+color: black;
+text-align: center;                
+
+}
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+    margin-left: -20px;
+}
+
+.main{
+    background-color: rgb(235, 248, 240);
+    grid-area: main;
+    display: flex;
+    justify-content: flex-start;
+ 
+}
+.announce{
+    display: flex;
+    justify-content: center;
+    color: #607274;
+}
+.container-announce{
+padding: 10px;
+margin-top: 20px;
+margin-left: 20px;
+margin-right: 20px;
+background-color: rgb(155, 235, 186);
+color: rgb(6, 6, 6);
+}
+.content{
+    padding: 0px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #607274;
+}
+nav{
+    background-color: #0A6847;
+    grid-area: nav;
+}
+nav ul li{
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    color: #F5EFE6;
+}
+ul{
+
+    display: flex;
+    justify-content: right;
+}
+li{
+    display: flex;
+    justify-content: flex-start;
+}
+.icons{
+    margin: 20px;
+    margin-right:100px;
+   
+}
+.icons2{
+    margin-right: -70px;
+}
+.dashboard{
+    display: flex;
+    justify-content: space-around;
+}
+input{
+    border: 2px solid black;
+}
+.logout{
+    background-color: rgb(198, 210, 210);
+    padding: 5px;    
+}
+.Pamantasan2{
+    display: flex; 
+   flex-direction: column;
+  
+    
+}
+
+.image{
+    height: 100%;
+    max-width: 100%;
+    margin-left: -15px;
+}
+.image{
+    height: 100px;
+    width: 100%;
+}
+.image2{
+    height: 100%;
+    max-width: 100%;
+    margin-left: -15px; 
+}
+.image2{
+    height: 80px;
+    width: 90%;
+    
+}
+.image3{
+    height: 100%;
+    max-width: 100%;
+    
+}
+.image3{
+    height: 200px;
+    width: 100%;
+}
+
+
+i{
+    padding: 5px;
+    color: white;
+}
+
+.left-sidebar{
+    background-color: rgb(235, 248, 240);
+    grid-area: left-sidebar;
+    font-size: 10px;
+    color: #607274;
+}
+.semester{
+    background-color: #607274;
+    color: white;
+    padding: 10px;
+
+}
+.sem{
+    display: flex;
+    justify-content: center;
+}
+.right-sidebar{
+    background-color: rgb(235, 248, 240);
+    grid-area: right-sidebar;
+}
+.center{
+    background-color: rgb(235, 248, 240);
+    grid-area: center;
+}
+.Act1{
+    padding:1px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(254, 254, 254);
+}
+
+footer {
+  background-color: rgb(235, 248, 240);
+  grid-area:footer;
+  }
+  .foot{
+    display: flex;
+    justify-content: left;
+   
+  }
+
+  /* Media Query for responsive website */
+  @media only screen and (max-width:1250px) {
+    .welcome {
+        height: 100px; 
+        max-width: 70%; 
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .main-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1.4fr 2.2fr 2.2fr ;
+        grid-template-areas: "nav"
+         "main" "center" "left-sidebar" "right-sidebar" "footer";
+    }
+    .nav{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr;
+        grid-template-areas: "nav" "nav" "nav" "nav";
+       
+        color: black;
+    }
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr;
+        grid-template-areas: "main" "main" "main" "main";
+       
+        color: black;
+    }
+    .right-sidebar{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr;
+        grid-template-areas: "right-sidebar" "right-sidebar" "right-sidebar" "right-sidebar";
+       
+        color: black;
+    }
+    .left-sidebar{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr;
+        grid-template-areas: "left-sidebar" "left-sidebar" "left-sidebar" "left-sidebar";
+       
+        color: black;
+    }
+    .center{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr;
+        grid-template-areas: "center" "center" "center" "center";
+       
+        color: black;
+    }
+    .footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr;
+        grid-template-areas: "footer" "footer" "footer" "footer";
+       
+        color: black;
+    }
+    
+}
